@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Сегодня</h1>
+        <button class='header__button'>Править</button>
+    </header>
+    <main class="todo">
+        <div class="wrapper">
+            <ul class="todo__list">
+                <li class="todo__item">
+                    <input class="todo__input" type="checkbox" id="checkbox-1">
+                      <label class="todo__label" for="checkbox-1">
+                        <span class="todo__span">Пройти стажировку в Онли</span>
+                      </label>
+                </li>
+                <li class="todo__item">
+                    <input class="todo__input" type="checkbox" id="checkbox-2">
+                      <label class="todo__label" for="checkbox-2">
+                        <span class="todo__span">Побриться</span>
+                      </label>
+                </li>
+                <li class="todo__item">
+                    <input class="todo__input" type="checkbox" id="checkbox-3">
+                      <label class="todo__label" for="checkbox-3">
+                        <span class="todo__span">Купить молоко</span>
+                      </label>
+                </li>
+                <li class="todo__item">
+                    <input class="todo__input" type="checkbox" id="checkbox-4">
+                      <label class="todo__label" for="checkbox-4">
+                        <span class="todo__span">Не забыть забрать сына из садика</span>
+                      </label>
+                </li>
+                <li class="todo__item">
+                    <input class="todo__input" type="checkbox" id="checkbox-5">
+                      <label class="todo__label" for="checkbox-5">
+                        <span class="todo__span">Купить сыр</span>
+                      </label>
+                </li>
+            </ul>
+            <div class="todo__button--add">
+                <button class="todo__button">
+                </button>
+            </div>
+        </div>
+            <div class="modal">
+                <div class="modal__window">
+                    <form class="modal__form">
+                        <input type="text" class="modal__input" placeholder="Введите текст задачи" id="input-modal">
+                        <div class="modal__buttons">
+                            <button class="modal__button button--close">Закрыть</button>
+                            <button class="modal__button button--add">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

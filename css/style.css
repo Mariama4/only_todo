@@ -1,0 +1,200 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+} 
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    max-width: 1280px;
+    margin: 0 auto 41px;
+    padding: 60px 40px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 45px;
+}
+
+.header h1 {
+    font-size: 28px;
+    line-height: 41px;
+}
+
+.header__button {
+    margin-left: auto;
+    background: #f2f2ff;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 15px;
+    font-size: 14px;
+    line-height: 140%;
+    outline: none;
+    cursor: pointer;
+    transition: backgroud-color .2s, color .2s;
+
+}
+
+.header__button:hover,
+.header__button:focus {
+    outline: none;
+    background-color: #23a3ff;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.todo__list {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 1280px;
+}
+  
+.todo__item {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+}
+  
+.todo__input {
+    opacity: 0;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+  
+.todo__span {
+    padding-left: 36px;
+    line-height: 1.5;
+}
+  
+.todo__span:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+  
+.todo__label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #D9D9D9;
+    border-radius: 100%;
+    position: absolute;
+}
+  
+.todo__label::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    background: url("../img/Ellipse 2.svg") center no-repeat;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: 0.1s;
+}
+  
+.todo__input:checked + 
+.todo__label::after {
+    opacity: 1;
+}
+
+.todo__button--add {
+    text-align: right;
+    margin-top: 250px;
+}
+
+.todo__button {
+    border: none;
+    color: white;
+    padding: 20px;
+    background: url('../img/Vector.svg') center no-repeat;
+    margin: 20px 40px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none;
+}
+ 
+.modal__window {
+    margin-top: -350px;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+}
+  
+.modal--active {
+    position: absolute;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 680px;
+    margin: auto;
+    top: 132px;
+	border-radius: 40px 40px 0px 0px;
+
+}
+
+.modal__input {
+    display: block;
+    width: 300px;
+    padding-bottom: 140px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+}
+  
+.modal__buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+  
+.modal__button {
+    width: 140px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+}
+  
+.button--close {
+    background: #F2F2F2;
+}
+  
+.button--add {
+    color: white;
+    background: #23A3FF;
+}
+  
